@@ -1,3 +1,8 @@
+package lab1;
+
+import lab1.Hero;
+import lab1.HeroMover;
+import lab1.Movements;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
