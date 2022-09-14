@@ -36,6 +36,9 @@ public class MatrixReader {
         } catch (FileNotFoundException e) {
             LOGGER.log(Level.WARNING, e.getMessage());
             throw new MatrixNotFoundException(path);
+        } catch (OutOfMemoryError e) {
+            LOGGER.log(Level.WARNING, "Память всё!");
+            return new int[0][0];
         }
     }
 
